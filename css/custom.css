@@ -8,13 +8,36 @@
   */
 
 /*----------- ADD YOUR CUSTOM CSS STYLES BELOW -----------*/
-
+@keyframes borderTransition{
+  25%{border-bottom: 2px solid #CABAC8;}
+  50%{border-left: 2px solid #CABAC8;}
+  75%{border-top: 2px solid #CABAC8;}
+  100%{border-right: 2px solid #CABAC8;
+    border-bottom: 2px solid #CABAC8;
+    border-left: 2px solid #CABAC8;
+    border-top: 2px solid #CABAC8;
+  }
+}
 .navbar-brand{
   margin: 0 -23px;
 }
+
+.navbar-nav{
+  padding: 11px;
+}
+
+ .navbar .navbar-nav  .p-link{
+  color: #61CFE5;
+}
+.navbar .navbar-nav  .p-link:hover{
+  animation: borderTransition 0.5s ease-in forwards;
+}
+
 .navbar .navbar-nav .nav-link:hover{
   color:#007bff;
-  transition: color .2s ease-in-out;
+  /* border-bottom: 1px solid #2c31ff; */
+  transition: all .3s ease-in-out;
+
 }
 
 .home-area .fixed-wrapper .social-icons .icon:hover{
