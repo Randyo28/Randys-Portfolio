@@ -8,3 +8,8 @@
   */
 
 /*----------- ADD YOUR CUSTOM CSS STYLES BELOW -----------*/
+
+
+.navbar-nav .nav-item:hover{
+  color:blue;
+}
