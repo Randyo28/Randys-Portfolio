@@ -9,7 +9,9 @@
 
 /*----------- ADD YOUR CUSTOM CSS STYLES BELOW -----------*/
 
-
+.navbar-brand{
+  margin: 0 -23px;
+}
 .navbar .navbar-nav .nav-link:hover{
   color:#007bff;
   transition: color .2s ease-in-out;
