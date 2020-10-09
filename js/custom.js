@@ -69,7 +69,7 @@ tl.fromTo('.navbar-menu',{
   x: 200,
   opacity:0,
 },{
-  duration: 1,
+  duration: 1.5,
   x:0,
   opacity:1,
 },
