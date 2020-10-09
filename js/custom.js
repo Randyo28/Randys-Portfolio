@@ -42,7 +42,7 @@ tl.fromTo('.navbar-brand',{
   opacity:0,
 },{
   opacity:1,
-  duration: 1.2,
+  duration: 1,
   x:0,
 },
 '>-1.7'
@@ -58,6 +58,17 @@ tl.fromTo('.social-icons .icon',{
   stagger:0.2,
 },
 '>-1'
+);
+
+tl.fromTo('.navbar-menu',{
+  x: 200,
+  opacity:0,
+},{
+  duration: 1,
+  x:0,
+  opacity:1,
+},
+'>-1.6'
 );
 
 
