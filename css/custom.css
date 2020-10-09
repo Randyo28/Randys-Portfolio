@@ -8,7 +8,7 @@
   */
 
 /*----------- ADD YOUR CUSTOM CSS STYLES BELOW -----------*/
-@keyframes borderTransition{
+/* @keyframes borderTransition{
   25%{border-bottom: 2px solid #CABAC8;}
   50%{border-left: 2px solid #CABAC8;}
   75%{border-top: 2px solid #CABAC8;}
@@ -17,7 +17,7 @@
     border-left: 2px solid #CABAC8;
     border-top: 2px solid #CABAC8;
   }
-}
+} */
 .navbar-brand{
   margin: 0 -23px;
 }
