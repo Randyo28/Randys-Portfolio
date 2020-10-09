@@ -18,6 +18,13 @@
     border-top: 2px solid #CABAC8;
   }
 } */
+
+
+
+/*line 980 of main.css to change icon to none to not show on mobile and line 900*/
+
+
+
 .navbar-brand{
   margin: 0 -23px;
 }
@@ -43,4 +50,18 @@
 .home-area .fixed-wrapper .social-icons .icon:hover{
   color: #007bff;
   transition: color .2s ease-in-out;
+}
+
+@media only screen and (max-width: 376px){
+  .home-area .fixed-wrapper .social-icons {
+    margin-bottom: 0;
+    display: flex;
+  }
+
+  .home-area .fixed-wrapper .social-icons>li {
+    line-height: 100%;
+    margin-top: 14px;
+    text-align: center;
+    padding: 0 20px;
+}
 }

@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 /*!
  * Item: Kitzu
  * Description: Personal Portfolio Template
@@ -25,6 +26,9 @@
 
 
   //Gsap
+
+const landingPage = () => {
+
 var tl = gsap.timeline();
 
 tl.fromTo('.navbar-nav .nav-item',{
@@ -37,15 +41,16 @@ tl.fromTo('.navbar-nav .nav-item',{
   opacity:1,
 });
 
-tl.fromTo('.navbar-brand',{
-  x: -150,
+tl.fromTo('.img-fluid',{
+  x: -270,
   opacity:0,
 },{
   opacity:1,
-  duration: 1,
+  duration: 1.5,
   x:0,
+  ease: 'Power.easeInOut',
 },
-'>-1.7'
+'>-1.2'
 );
 
 tl.fromTo('.social-icons .icon',{
@@ -70,6 +75,10 @@ tl.fromTo('.navbar-menu',{
 },
 '>-1.6'
 );
+
+};
+
+landingPage();
 
 
 
