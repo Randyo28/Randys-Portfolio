@@ -93,6 +93,11 @@ tl.fromTo('.navbar-menu',{
 
 landingPage();
 
+$('.close-btn').on('click',function(){
+  landingPage();
+  console.log('it worked');
+});
+
 const aboutPage = () => {
 
 var tl = gsap.timeline();
