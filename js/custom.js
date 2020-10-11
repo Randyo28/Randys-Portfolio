@@ -121,7 +121,7 @@ const resumePage = () =>{
   var tl = gsap.timeline();
 
 tl.fromTo('.section-heading', {
-  y:200,
+  y:-200,
 },{
   y:0,
   duration: 2,
