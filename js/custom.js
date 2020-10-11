@@ -25,6 +25,9 @@
 //https://cloudconvert.com/pdf-to-html
 
 
+
+
+
   //Gsap
 $(function(){
 
@@ -110,10 +113,30 @@ tl.fromTo('.info-section', {
   ease: 'Power.easeInOut',
 });
 
+// ScrollTrigger.defaults({
+//     markers:true
+//   });
+
+  // tl.fromTo('.service-section', {
+  //   y:100
+  // },{
+  //   y:0,
+  //   scrollTrigger: {
+  //   trigger: '.service-section',
+  //   // toggleActions: 'play reverse',
+  //   start: 'center center',
+  //   end: 'center center',
+  //    // scrub: 1,
+  //   id:"service-section",
+  //   markers:true,
+  // }
+  // });
+
 };
 
 $('.about').on('click',function(){
   aboutPage();
+  scrollTriggerrefresh();
   console.log('it worked');
 });
 

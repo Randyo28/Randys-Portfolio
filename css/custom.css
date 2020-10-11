@@ -52,11 +52,11 @@
   transition: color .2s ease-in-out;
 }
 
-@media only screen and (max-width: 376px){
+@media only screen and (max-width: 570px){
   .home-area .fixed-wrapper .social-icons {
     margin-bottom: 0;
     display: flex;
-    padding-bottom: 113px; 
+    padding-bottom: 113px;
   }
 
   .home-area .fixed-wrapper .social-icons>li {
