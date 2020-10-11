@@ -26,6 +26,8 @@
 
 
   //Gsap
+$(function(){
+
 
 const landingPage = () => {
 
@@ -60,10 +62,21 @@ tl.fromTo('.social-icons .icon',{
   duration: 0.5,
   y:0,
   opacity:1,
-  stagger:0.2,
+  stagger: 0.2,
 },
 '>-1'
 );
+
+tl.fromTo('.home-area .fixed-wrapper .social-icons .icon',{
+color:'#007bff',
+},{
+  color: 'white',
+  stagger: 0.2,
+},
+'>-1'
+);
+
+
 
 tl.fromTo('.navbar-menu',{
   x: 200,
@@ -79,6 +92,94 @@ tl.fromTo('.navbar-menu',{
 };
 
 landingPage();
+
+const aboutPage = () => {
+
+var tl = gsap.timeline();
+
+tl.fromTo('.info-section', {
+  y:500,
+}, {
+  y:0,
+  duration: 2,
+  ease: 'Power.easeInOut',
+});
+
+};
+
+$('.about').on('click',function(){
+  aboutPage();
+  console.log('it worked');
+});
+
+const resumePage = () =>{
+  var tl = gsap.timeline();
+
+tl.fromTo('.section-heading', {
+  y:200,
+},{
+  y:0,
+  duration: 2,
+  ease: 'Power.easeInOut',
+});
+
+tl.fromTo('.education', {
+  x:-150,
+},{
+  x:0,
+  duration: 2,
+  ease: 'Power.easeInOut',
+},
+'>-1.5'
+);
+
+tl.fromTo('.experience', {
+  x:150,
+},{
+  x:0,
+  duration: 2,
+  ease: 'Power.easeInOut',
+},
+'>-1.7'
+);
+
+};
+
+$('.resume').on('click',function(){
+  resumePage();
+});
+
+
+const portfolioPage = () => {
+var tl = gsap.timeline();
+
+tl.fromTo('.lightbox-content', {
+  scale:0,
+},{
+  scale:1,
+  duration: 1.5,
+  ease: 'Power.easeInOut',
+});
+
+};
+
+$('.portfolio').on('click',function(){
+  portfolioPage();
+  console.log('it worked');
+});
+
+
+
+
+
+
+
+
+});
+
+
+
+
 
 
 
