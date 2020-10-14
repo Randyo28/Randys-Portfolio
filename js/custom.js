@@ -26,8 +26,6 @@
 
 
 
-
-
   //Gsap
 $(function(){
 
@@ -94,7 +92,11 @@ tl.fromTo('.navbar-menu',{
 
 };
 
+$(window).on('load', function() {
 landingPage();
+console.log('function loaded');
+ });
+
 
 $('.close-btn').on('click',function(){
   landingPage();
@@ -106,39 +108,58 @@ const aboutPage = () => {
 var tl = gsap.timeline();
 
 tl.fromTo('.info-section', {
-  y:500,
+  y:300,
 }, {
   y:0,
   duration: 2,
   ease: 'Power.easeInOut',
 });
 
-// ScrollTrigger.defaults({
-//     markers:true
-//   });
 
-  // tl.fromTo('.service-section', {
-  //   y:100
-  // },{
-  //   y:0,
-  //   scrollTrigger: {
-  //   trigger: '.service-section',
-  //   // toggleActions: 'play reverse',
-  //   start: 'center center',
-  //   end: 'center center',
-  //    // scrub: 1,
-  //   id:"service-section",
-  //   markers:true,
-  // }
-  // });
 
+// tl.fromTo('.services-section',{
+//   x:-500,
+//   ease: 'sine.easeOut',
+// },{
+//   x:0,
+//   duration:3,
+// //   scrollTrigger: {
+// //   trigger:'.services-section',
+// //   start: "bottom bottom",
+// //   end: "bottom bottom",
+// //   scrub:true,
+// //   duration: 5,
+// //   delay: 3,
+// // }
+// });
 };
+// const about2 = () => {
+//   gsap.registerPlugin(ScrollTrigger);
+// var tl = gsap.timeline({ScrollTrigger:{
+//   trigger:'.services-section',
+//     start: "top 50%",
+//      end: "bottom 50%",
+//      markers:true,
+//      scrub:true,
+//      duration: 3,
+// }});
+//
+// tl.fromTo('.single-section',{
+//   x:-200,
+// },{
+//   x:0,
+// });
+//
+// };
+
+
 
 $('.about').on('click',function(){
   aboutPage();
-  scrollTriggerrefresh();
+  // about2();
   console.log('it worked');
 });
+
 
 const resumePage = () =>{
   var tl = gsap.timeline();

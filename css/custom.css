@@ -51,18 +51,18 @@
   color: #007bff;
   transition: color .2s ease-in-out;
 }
-
-@media only screen and (max-width: 570px){
-  .home-area .fixed-wrapper .social-icons {
-    margin-bottom: 0;
-    display: flex;
-    padding-bottom: 113px;
-  }
+@media only screen and (max-width: 500px){
+ .home-area .fixed-wrapper .social-icons {
+   margin-bottom: 0;
+   display: flex;
+   padding-bottom: 113px;
+ }
 
   .home-area .fixed-wrapper .social-icons>li {
-    line-height: 100%;
-    margin-top: 14px;
-    text-align: center;
-    padding: 0 20px;
+   line-height: 100%;
+   margin-top: 14px;
+   text-align: center;
+   padding: 0 20px;
 }
+
 }
