@@ -39,6 +39,12 @@
 
 }
 
+.content-p{
+  padding-top: 15px;
+  color:#fff;
+  font-size: 15px;
+}
+
 .home-area .fixed-wrapper .social-icons .icon:hover{
   color: #007bff;
   transition: color .2s ease-in-out;
