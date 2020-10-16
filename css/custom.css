@@ -63,4 +63,10 @@
    padding: 0 20px;
 }
 
+.content-p{
+  padding-top: 1px;
+  color:#fff;
+  font-size: 10px;
+}
+
 }
