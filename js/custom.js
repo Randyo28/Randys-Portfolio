@@ -1,12 +1,5 @@
 /*jshint esversion: 6 */
-/*!
- * Item: Kitzu
- * Description: Personal Portfolio Template
- * Author/Developer: Exill
- * Author/Developer URL: https://themeforest.net/user/exill
- * Version: v1.1.0
- * License: Themeforest Standard Licenses: https://themeforest.net/licenses
- */
+
 
         //Convert pdf to
 //https://cloudconvert.com/pdf-to-html
@@ -103,47 +96,47 @@ tl.fromTo('.info-section', {
 });
 
 
-
 // tl.fromTo('.services-section',{
 //   x:-500,
-//   ease: 'sine.easeOut',
 // },{
 //   x:0,
-//   duration:3,
-// //   scrollTrigger: {
-// //   trigger:'.services-section',
-// //   start: "bottom bottom",
-// //   end: "bottom bottom",
-// //   scrub:true,
-// //   duration: 5,
-// //   delay: 3,
-// // }
+//   ease: 'sine.easeOut',
 // });
+
+// ScrollTrigger.create({
+//   trigger: ".services-section",
+//   start: "top top",
+//   end: "bottom 50%+=100px",
+//   animation: tween,
+// });
+
 };
 // const about2 = () => {
-//   gsap.registerPlugin(ScrollTrigger);
-// var tl = gsap.timeline({ScrollTrigger:{
-//   trigger:'.services-section',
-//     start: "top 50%",
-//      end: "bottom 50%",
-//      markers:true,
-//      scrub:true,
-//      duration: 3,
-// }});
-//
-// tl.fromTo('.single-section',{
-//   x:-200,
-// },{
-//   x:0,
-// });
-//
+//   var tl = gsap.timeline();
+
+//   tl.fromTo('.services-section',{
+//     x:-500,
+//   },{
+//     x:0,
+//     ease: 'sine.easeOut',
+//     duration:3,
+//   });
+  
+//   ScrollTrigger.create({
+//     trigger: ".info-img",
+//     start: "top center",
+//     end: "bottom center",
+//     animation: tl,
+//     markers:true,
+//   });
+
 // };
 
 
 
 $('.about').on('click',function(){
   aboutPage();
-  // about2();
+  about2();
   console.log('it worked');
 });
 
@@ -189,12 +182,13 @@ $('.resume').on('click',function(){
 const portfolioPage = () => {
 var tl = gsap.timeline();
 
-tl.fromTo('.lightbox-content', {
+tl.fromTo('.single-item', {
   scale:0,
 },{
   scale:1,
   duration: 1.5,
   ease: 'Power.easeInOut',
+  stagger:0.3,
 });
 
 };
