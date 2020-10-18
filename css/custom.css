@@ -45,6 +45,10 @@
   font-size: 15px;
 }
 
+.single-service .branding{
+  padding-bottom: 52px;
+}
+
 .home-area .fixed-wrapper .social-icons .icon:hover{
   color: #007bff;
   transition: color .2s ease-in-out;
