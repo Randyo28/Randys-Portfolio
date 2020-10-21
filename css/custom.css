@@ -74,3 +74,8 @@
 }
 
 }
+@media (max-width: 767.98px){
+  .navbar .navbar-menu .btn-line, .navbar .navbar-menu:before, .navbar .navbar-menu:after {
+      background-color: #007bff;
+  }
+  }
