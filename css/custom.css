@@ -15,8 +15,6 @@
 
 /*line 980 of main.css to change icon to none to not show on mobile and line 900*/
 
-
-
 .navbar-brand{
   margin: 0 -23px;
 }
@@ -39,6 +37,11 @@
 
 }
 
+.home-area .fixed-wrapper .social-icons .icon:hover{
+  color: #007bff;
+  transition: color .2s ease-in-out;
+}
+
 .content-p{
   padding-top: 15px;
   color:#fff;
@@ -49,10 +52,14 @@
   padding-bottom: 52px;
 }
 
-.home-area .fixed-wrapper .social-icons .icon:hover{
-  color: #007bff;
-  transition: color .2s ease-in-out;
+.skills{
+  font-size: 57px;
+  color:#fff;
 }
+.skills:hover{
+  color:#007bff;
+}
+
 @media only screen and (max-width: 500px){
  .home-area .fixed-wrapper .social-icons {
    margin-bottom: 0;
@@ -74,8 +81,3 @@
 }
 
 }
-@media (max-width: 767.98px){
-  .navbar .navbar-menu .btn-line, .navbar .navbar-menu:before, .navbar .navbar-menu:after {
-      background-color: #007bff;
-  }
-  }
