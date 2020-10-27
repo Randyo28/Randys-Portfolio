@@ -15,6 +15,7 @@
 
 /*line 980 of main.css to change icon to none to not show on mobile and line 900*/
 
+/* Nav-bar */
 .navbar-brand{
   margin: 0 -23px;
 }
@@ -37,19 +38,20 @@
 
 }
 
+/* Landing-page */
+
 .home-area .fixed-wrapper .social-icons .icon:hover{
   color: #007bff;
   transition: color .2s ease-in-out;
 }
 
-.content-p{
-  padding-top: 15px;
-  color:#fff;
-  font-size: 15px;
-}
-
+/* About-page */
 .single-service .branding{
   padding-bottom: 52px;
+}
+
+.standard{
+  padding:71px 0 !important;
 }
 
 .skills{
@@ -60,6 +62,15 @@
   color:#007bff;
 }
 
+/* Portfolio-Page */
+.content-p{
+  padding-top: 15px;
+  color:#fff;
+  font-size: 15px;
+}
+
+
+/* Media-Quiries */
 @media only screen and (max-width: 500px){
  .home-area .fixed-wrapper .social-icons {
    margin-bottom: 0;
