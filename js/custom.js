@@ -14,6 +14,7 @@ const landingPage = () => {
 
 var tl = gsap.timeline();
 
+//Nav-list
 tl.fromTo('.navbar-nav .nav-item',{
   x: 200,
   opacity:0,
@@ -24,6 +25,7 @@ tl.fromTo('.navbar-nav .nav-item',{
   opacity:1,
 });
 
+//Logo
 tl.fromTo('.img-fluid',{
   x: -270,
   opacity:0,
@@ -36,6 +38,7 @@ tl.fromTo('.img-fluid',{
 '>-1.2'
 );
 
+//Social-media-icon-bottom-right
 tl.fromTo('.social-icons .icon',{
   y: 50,
   opacity:0,
@@ -48,6 +51,7 @@ tl.fromTo('.social-icons .icon',{
 '>-1'
 );
 
+//Social-media-stagger-effect
 tl.fromTo('.home-area .fixed-wrapper .social-icons .icon',{
 color:'#007bff',
 },{
@@ -58,7 +62,7 @@ color:'#007bff',
 );
 
 
-
+//Mobile-Nav
 tl.fromTo('.navbar-menu',{
   x: 200,
   opacity:0,
@@ -68,6 +72,16 @@ tl.fromTo('.navbar-menu',{
   opacity:1,
 },
 '>-1.6'
+);
+
+tl.fromTo('.navbar-menu',{
+  y: 0,
+},{
+  y:-10,
+  duration: 1,
+  repeat: -1,
+  yoyo: true
+}
 );
 
 };
@@ -171,6 +185,16 @@ tl.fromTo('.experience', {
 },
 '>-1.7'
 );
+
+tl.fromTo('.skills', {
+  color:'#fff',
+},{
+  color: '#007bff',
+  ease: 'Sine.easeInOut',
+  repeat: -1,
+  duration: 1.5,
+  yoyo: true
+});
 
 };
 
