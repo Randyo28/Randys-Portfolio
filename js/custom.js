@@ -79,9 +79,10 @@ tl.fromTo('.navbar-menu',{
 },{
   y:-10,
   duration: 1,
-  repeat: -1,
+  repeat: 5,
   yoyo: true
-}
+},
+'>1'
 );
 
 };
